@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author 喻浩
@@ -6,7 +7,9 @@ import java.util.HashMap;
  */
 public class HashMapTest {
     public static void main(String[] args) {
-        HashMap<String,String> hashMap = new HashMap<String, String>();
+        HashMap<String,String> hashMap = new HashMap<String, String>(17);
+        ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
+        hashMap.put("1","1");
 
 //        System.out.println(1^1);
 
